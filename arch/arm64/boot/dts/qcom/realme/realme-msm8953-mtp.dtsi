@@ -1074,15 +1074,15 @@
 }
 
 &soc {
-    iovdd_gpio_vreg: iovdd_gpio_vreg {
-        compatible = "regulator-fixed";
-        regulator-name="iovdd_gpio_vreg";
-        gpio = <&tlmm 97 0>; /* iovdd - ldo6 */
-        startup-delay-us = <300>;
-        enable-active-high;
-        regulator-boot-on;
-        status = "ok";
-    };
+ 	iovdd_gpio_vreg: iovdd_gpio_vreg {
+	compatible = "regulator-fixed";
+	regulator-name="iovdd_gpio_vreg";
+ 	gpio = <&tlmm 97 0>; /* iovdd - ldo6 */
+ 	startup-delay-us = <300>;
+ 	enable-active-high;
+	regulator-boot-on;
+	status = "ok";
+ };
 };
 
 &mdss_dsi0 {
